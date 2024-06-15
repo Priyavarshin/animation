@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snacks</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="nav">
+    <div class="logo">
+        <img src="./snack logo.jpg" alt="" class="logoimg">
+    </div>
+    <div class="menu-list">
+    <ul>
+        <li class="home">Home</li>
+        <li>About</li>
+        <li class="prodt">Product</li>
+        <li class="cont">Contact</li>
+    </ul>
+</div>
+</div>
+<div class="maincontnet">
+    <div class="header">
+    <h2 class="snackhead">Snacks</h2>
+    <h2 class="snackhead2">Grocery Store</h2>
+    <p class="parasnack">Our grocery store is stocked with an extensive variety of snacks to satisfy every craving. Whether you're looking for crunchy chips, decadent chocolates, nutritious nuts, or savory jerky, we have something for everyone.</p>
+</div>
+<div class="chipseating">
+    <img src="./chipseating .jpg" alt="" class="childeat">
+</div>
+
+</div>
+<div class="button">
+    <button type="submit" class="seebtn">See more</button>
+</div><br><br>
+
+<div class="maincontnet2">
+    <div class="img1">
+        <img src="./thin chips.jpeg" alt="" class="mainimg">
+        <h3 class="imghead">Tapioca Sticks</h3>
+    </div>
+    <div class="img2">
+        <img src="./chips.jpeg" alt="" class="mainimg1">
+        <h3 class="imghead1">Potato Chips</h3>
+    </div>
+    <div class="img3">
+        <img src="./nanthra chips.jpeg" alt="" class="mainimg2">
+        <h3 class="imghead2">Nandra Chips</h3>
+    </div>
+</div><br><br>
+<div class="maincontnet3">
+    <div class="imagesonly">
+        <div class="img4">
+            <img src="./castor oil.jpg" alt="" class="mainimg3">
+        </div>
+        <div class="img5">
+            <img src="./groundnut oil.jpg" alt="" class="mainimg4">
+        </div>
+        <div class="img6">
+            <img src="./neem oil.jpg" alt="" class="mainimg5">
+        </div>
+    </div>
+    <div class="contentpara">
+        <span class="color">Pure as nature,<br> powerful as progress</span> <br><h3 class="paragraph">experience the essence of excellence with our premium oil</h3>
+        <p class="para">Experience the natural goodness and versatility of our premium oils, including coconut, neem, and groundnut oil. Each oil is carefully extracted to retain its pure essence</p>
+    </div>
+    <div class="button">
+        <button type="submit" class="seebtn1">Shop Now</button>
+    </div>
+</div><br><br>
+<div class="maincontnet4">
+    <div class="contentpara1">
+        <span class="color1">Golden and pure</span><h3 class="paragraph1"> our ghee brings the rich taste of <br> tradition to every dish</h3>
+        <p class="para1">Made from the finest butter, our ghee adds a creamy, aromatic flavor to any dish. It's perfect for cooking, frying, and baking, thanks to its high smoke point.</p>
+        <div class="button">
+            <button type="submit" class="seebtn2">Shop Now</button>
+        </div>
+    </div>
+    <div class="img7">
+        <img src="./pure ghee.jpg" alt="" class="mainimg6">
+    </div>
+</div>
+<center>
+<div class="subscribtion">
+    <h3 class="head4">SUBSCRIBE TO OUR NEWSLETTER</h3>
+    <p class="subscribtionpara">Stay updated with our latest offers and products</p>
+    <input type="email" class="email" ><button class="btn7">Subscribe</button>
+</div></center>
+
+<div class="maincontnet5">
+    <div class="navlast">
+        <ul>
+            <li >Help</li>
+            <li >About Us</li>
+            <li>Company</li>
+            <li>Services</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="down">
+        <h3>Download Our App</h3>
+        <center>
+        <p>Download our app now to make shopping easier than ever. Explore a wide variety of products, from groceries to household items, all in one place </p>
+    </div></center>
+    <center>
+    <div class="imagesdownload">
+        <img src="./google play.png" alt="" class="img20">
+        <img src="./App_Store_Badge.png" alt="" class="img21">
+    </div>
+</center>
+</div>
+<center>
+<div class="line"></div></center>
+<center>
+<p class="copyright">&copy; 2024 Snacks All Rights Reserved</p></center><br><br>
+
+<script>
+   document.addEventListener('DOMContentLoaded', function() {
+    const elementsAnimate = document.querySelectorAll('.nav, .snackhead, .snackhead2, .parasnack, .childeat, .seebtn, .img1, .img2, .img3, .imagesonly, .contentpara, .seebtn1, .contentpara1, .img7, .subscribtion, .navlast, .down, .imagesdownload, .copyright'); 
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            } else {
+                entry.target.classList.remove('show');
+            }
+        });
+    }, { threshold: 0.1 });
+    
+    elementsAnimate.forEach(element => {
+        observer.observe(element);
+    });
+});
+
+</script>
+</body>
+</html>
